@@ -1,6 +1,8 @@
 {
   "name": "geartrackerclient",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "description": "Web client for the geartracker application.",
+  "repository": "http://github.com/smkell/geartracker-client",
   "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.1",

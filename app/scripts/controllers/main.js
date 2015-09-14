@@ -9,9 +9,9 @@
  */
 angular.module('geartrackerClientApp')
   .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
+
+    $scope.gearSites = [
+    	{name: 'Steep & Cheap', description: 'Steep & Cheap offers steals on camping, hiking, skiing, cycling gear and more.', url: 'http://www.steepandcheap.com/'},
+    	{name: 'Backcountry', description: 'Offers climbing, backpacking, and backcountry wintersports gear.', url: 'http://www.backcountry.com/'}
     ];
   });

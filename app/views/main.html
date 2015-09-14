@@ -1,15 +1,26 @@
 <div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+	<h1>Welcome to Geartracker</h1>
+	<p class="lead">Never miss a steal on the gear that you most want.</p>
 </div>
 
 <div class="row marketing">
-  <div ng-repeat="gearSite in gearSites">
-    <a href="{{gearSite.url}}" target="_blank"><h4>{{gearSite.name}}</h4></a>
-    <p>{{gearSite.description}}</p>
-  </div>
+	<h3>Sites Geartracker can currently monitor</h3>
+	<div ng-repeat="gearSite in gearSites">
+		<a href="{{gearSite.url}}" target="_blank"><h4>{{gearSite.name}}</h4></a>
+		<p>{{gearSite.description}}</p>
+	</div>
+</div>
+
+<div class="row marketing">
+	<h3>Popular Items</h3>
+	<div ng-repeat="popularItem in popularItems">
+		<h4>{{popularItem.name}}</h4>
+		<strong>{{popularItem.type}}</strong>
+		<p>{{popularItem.description}}</p>
+		<p>
+			<span ng-repeat="category in popularItem.categories">
+				<a href="#"><small>{{category}}</small></a>
+			</span>
+		</p>
+	</div>
 </div>

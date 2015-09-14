@@ -19,4 +19,8 @@ describe('Controller: MainCtrl', function () {
   it('should attach a list of gearSites to the scope', function() {
     expect(scope.gearSites.length).toBe(2);
   });
+
+  it('should attach a list of popular items to the scope', function() {
+    expect(scope.popularItems.length).toBe(10);
+  });
 });
